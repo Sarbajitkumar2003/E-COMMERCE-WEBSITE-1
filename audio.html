@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earphone and Headphone </title>
+    <link rel="stylesheet" href="audio.css">
+    <!-- LUXVORA FAVICON -->
+    <link rel="icon"
+          type="logo/png"
+          href="favicon.png">
+</head>
+<body>
+       <header>
+
+<nav class="navbar">
+
+    <!-- LOGO -->
+    <a href="INDEX.HTML" class="logo">
+        <span class="logo-main">LUXVORA</span>
+        <span class="logo-sub">STYLE . TECH . EVERYTHING</span>
+    </a>
+
+
+    <!-- NAVIGATION -->
+    <div class="nav-links" id="navLinks">
+
+        <a href="INDEX.HTML">Home</a>
+
+        <a href="categories.html">Categories</a>
+        
+        <a href="new-arrivals.html">New Arrivals</a>
+
+        <a href="deals-offers.html">Deals & Offers</a>
+
+
+        <!-- MORE -->
+        <div class="more" id="moreMenu">
+
+            <button class="more-btn" id="moreBtn">
+                More
+                <ion-icon name="chevron-down-circle"></ion-icon>
+            </button>
+
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+
+                <!-- PROFILE -->
+                <a href="profile.html" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="person-circle"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Your Profile
+                        </span>
+
+                        <span class="item-description">
+                            Manage your account
+                        </span>
+                    </span>
+
+                </a>
+
+                <!-- WISHLIST -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="heart"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Wishlist
+                        </span>
+
+                        <span class="item-description">
+                            Your saved products
+                        </span>
+                    </span>
+
+                </a>
+
+
+                <!-- CART -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="cart"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Carts
+                        </span>
+
+                        <span class="item-description">
+                            View your cart
+                        </span>
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICE -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="people-circle"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            24/7 Service Care
+                        </span>
+
+                        <span class="item-description">
+                            We're here to help
+                        </span>
+                    </span>
+
+                </a>
+
+
+                <!-- NOTIFICATION -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="notifications"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Notification
+                        </span>
+
+                        <span class="item-description">
+                            Latest updates & offers
+                        </span>
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT ACTIONS -->
+        <a href="#" class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+        </a>
+
+        <a href="#" class="action-btn">
+            <ion-icon name="cart-outline"></ion-icon>
+        </a>
+
+        <a href="#" class="action-btn notification">
+            <ion-icon name="notifications-outline"></ion-icon>
+        </a>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <button class="menu-btn" id="menuBtn">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+    </button>
+
+</nav>
+
+</header>
+
+<!-- ================= SHOP ================= -->
+
+<section class="shop-container">
+
+
+    <!-- FILTER -->
+
+    <aside class="filter-box">
+
+        <div class="filter-heading">
+
+            <h2>
+                <ion-icon name="options-outline"></ion-icon>
+                Filters
+            </h2>
+
+            <button id="clearBtn">
+                Clear
+            </button>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="filter-section">
+
+            <label>
+                Search Earphone and Headphone
+            </label>
+
+            <div class="filter-search">
+
+                <ion-icon name="search-outline"></ion-icon>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search earphone and headphone...">
+
+            </div>
+
+        </div>
+
+
+        <!-- BRAND -->
+
+        <div class="filter-section">
+
+            <h3>Brand</h3>
+
+            <label class="check">
+                <input type="checkbox" value="boAt"
+                       class="brandFilter">
+                boAt
+            </label>
+
+            <label class="check">
+                <input type="checkbox" value="bose"
+                       class="brandFilter">
+                Bose
+            </label>
+
+            <label class="check">
+                <input type="checkbox" value="JBL"
+                       class="brandFilter">
+                JBL
+            </label>
+
+            <label class="check">
+                <input type="checkbox" value="realme buds"
+                       class="brandFilter">
+                Realme Buds
+            </label>
+
+            <label class="check">
+                <input type="checkbox" value="Audio-Technica"
+                       class="brandFilter">
+                Audio-Technica
+            </label>
+
+        </div>
+
+
+        <!-- PRICE -->
+
+        <div class="filter-section">
+
+            <h3>Maximum Price</h3>
+
+            <input
+                type="range"
+                id="priceRange"
+                min="15000"
+                max="150000"
+                value="150000"
+                step="1000">
+
+            <div class="price-display">
+
+                <span>₹15,000</span>
+
+                <strong id="priceText">
+                    ₹1,50,000
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- RATING -->
+
+        <div class="filter-section">
+
+            <h3>Minimum Rating</h3>
+
+            <label class="check">
+                <input type="radio"
+                       name="rating"
+                       value="4">
+                ⭐ 4+ Rating
+            </label>
+
+            <label class="check">
+                <input type="radio"
+                       name="rating"
+                       value="3">
+                ⭐ 3+ Rating
+            </label>
+
+        </div>
+
+    </aside>
+
+
+    <!-- PRODUCTS -->
+
+    <main class="products-area">
+
+        <div class="products-header">
+
+            <div>
+
+                <h2>
+                    Earphones and Headphones
+                </h2>
+
+                <p id="resultText">
+                    Showing 6 products
+                </p>
+
+            </div>
+
+
+            <select id="sortSelect">
+
+                <option value="default">
+                    Recommended
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+                <option value="rating">
+                    Highest Rated
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div
+            class="product-grid"
+            id="productGrid">
+        </div>
+
+
+        <div
+            class="empty"
+            id="emptyBox">
+
+            <ion-icon name="headset-outline"></ion-icon>
+
+            <h3>
+                No earphone or headphone found
+            </h3>
+
+            <p>
+                Try another search or filter.
+            </p>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<script src="audio.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

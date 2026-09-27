@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register Your Account</title>
+        <link rel="stylesheet" href="login.css">
+        <!-- LUXVORA FAVICON -->
+        <link rel="icon"
+          type="logo/png"
+          href="favicon.png">
+</head>
+<body>
+
+<!-- CLOSE BUTTON -->
+<a href="index.html" class="close-btn" aria-label="Close Login/Register">
+    <span>&times;</span>
+</a>
+
+    
+<!-- ANIMATED BACKGROUND -->
+
+<div class="background">
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+</div>
+
+
+<!-- AUTHENTICATION -->
+
+<div class="auth-container">
+
+
+    <!-- LEFT -->
+
+    <section class="welcome-section">
+
+        <div class="logo">
+            LUXVORA
+        </div>
+
+        <div class="tagline">
+            STYLE . TECH . EVERYTHING
+        </div>
+
+        <div class="welcome-icon">
+            <ion-icon name="person-outline"></ion-icon>
+        </div>
+
+        <h2>
+            Welcome to LUXVORA
+        </h2>
+
+        <p>
+            Login or create your account to manage
+            orders, wishlist, cart, notifications and
+            personalized shopping.
+        </p>
+
+    </section>
+
+
+    <!-- RIGHT -->
+
+    <section class="form-section">
+
+
+        <!-- TABS -->
+
+        <div class="tabs">
+
+            <button
+            class="tab active"
+            onclick="showForm('login',this)">
+                Login
+            </button>
+
+            <button
+            class="tab"
+            onclick="showForm('register',this)">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <form class="form active"
+        id="login"
+        onsubmit="loginUser(event)">
+
+            <h1>
+                Welcome Back 👋
+            </h1>
+
+            <p class="form-subtitle">
+                Login to continue shopping with LUXVORA.
+            </p>
+
+
+            <div class="input-group">
+
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+                required>
+
+                <ion-icon name="eye-off-outline"
+                onclick="togglePassword('loginPassword',this)">
+                </ion-icon>
+
+            </div>
+
+
+            <div class="options">
+
+                <label class="remember">
+
+                    <input type="checkbox">
+
+                    Remember me
+
+                </label>
+
+                <a href="#" class="forgot">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+
+            <button class="submit-btn" type="submit">
+
+                LOGIN
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+
+            </button>
+
+
+            <div class="divider">
+                OR CONTINUE WITH
+            </div>
+
+
+            <div class="social-login">
+
+                <button class="social" type="button">
+                    <ion-icon name="logo-google"></ion-icon>
+                    Google
+                </button>
+
+                <button class="social" type="button">
+                   <ion-icon name="logo-facebook"></ion-icon>
+                    Facebook
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- REGISTER -->
+
+        <form class="form"
+        id="register"
+        onsubmit="registerUser(event)">
+
+            <h1>
+                Create Account 🚀
+            </h1>
+
+            <p class="form-subtitle">
+                Join LUXVORA and start your shopping journey.
+            </p>
+
+
+            <div class="input-group">
+
+                <ion-icon name="person-outline"></ion-icon>
+
+                <input
+                type="text"
+                placeholder="Full Name"
+                required>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+
+                <input
+                type="tel"
+                placeholder="Mobile Number"
+                required>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input
+                type="password"
+                id="registerPassword"
+                placeholder="Create Password"
+                required>
+
+                <ion-icon name="eye-off-outline"
+                onclick="togglePassword('registerPassword',this)">
+            </ion-icon>
+                
+            </div>
+
+
+            <div class="input-group">
+
+                <ion-icon name="shield-half-outline"></ion-icon>
+
+                <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+                required>
+
+            </div>
+
+
+            <button
+            class="submit-btn"
+            type="submit">
+
+                CREATE ACCOUNT
+                <ion-icon name="person-add-outline"></ion-icon>
+
+            </button>
+
+
+            <p class="terms">
+
+                By creating an account, you agree to
+                our <a href="#">Terms & Conditions</a>
+                and <a href="#">Privacy Policy</a>.
+
+            </p>
+
+        </form>
+
+
+    </section>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</div>
+</body>
+</html>

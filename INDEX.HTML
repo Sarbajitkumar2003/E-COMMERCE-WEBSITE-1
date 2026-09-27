@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website.</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <!-- LUXVORA FAVICON -->
+    <link rel="icon"
+          type="logo/png"
+          href="favicon.png">
+</head>
+<body>
+    <header>
+
+<nav class="navbar">
+
+    <!-- LOGO -->
+    <a href="#" class="logo">
+        <span class="logo-main">LUXVORA</span>
+        <span class="logo-sub">STYLE . TECH . EVERYTHING</span>
+    </a>
+
+
+    <!-- NAVIGATION -->
+    <div class="nav-links" id="navLinks">
+
+        <a href="#">Home</a>
+
+        
+        <a href="categories.html">Categories</a>
+        
+        <a href="new-arrivals.html">New Arrivals</a>
+
+        <a href="deals-offers.html">Deals & Offers</a>
+
+
+        <!-- MORE -->
+        <div class="more" id="moreMenu">
+
+            <button class="more-btn" id="moreBtn">
+                More
+                <ion-icon name="chevron-down-circle"></ion-icon>
+            </button>
+
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+
+                <!-- PROFILE -->
+                <a href="profile.html" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="person-circle"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Your Profile
+                        </span>
+
+                        <span class="item-description">
+                            Manage your account
+                        </span>
+                    </span>
+
+                </a>
+
+                <!-- WISHLIST -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="heart"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Wishlist
+                        </span>
+
+                        <span class="item-description">
+                            Your saved products
+                        </span>
+                    </span>
+
+                </a>
+
+
+                <!-- CART -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="cart"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Carts
+                        </span>
+
+                        <span class="item-description">
+                            View your cart
+                        </span>
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICE -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="people-circle"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            24/7 Service Care
+                        </span>
+
+                        <span class="item-description">
+                            We're here to help
+                        </span>
+                    </span>
+
+                </a>
+
+
+                <!-- NOTIFICATION -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="notifications"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Notification
+                        </span>
+
+                        <span class="item-description">
+                            Latest updates & offers
+                        </span>
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT ACTIONS -->
+    <div class="nav-actions">
+        <div class="search-box">
+        <a href="#" class="action-btn">
+            <ion-icon name="search"></ion-icon>
+        </a>
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        autocomplete="off">
+            <button
+                class="search-btn"
+                id="searchBtn"
+                type="button"
+                aria-label="Search">
+                <ion-icon name="search-circle"></ion-icon>
+            </button>
+
+        </div>
+        <a href="#" class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+        </a>
+
+        <a href="#" class="action-btn">
+            <ion-icon name="cart-outline"></ion-icon>
+        </a>
+
+        <a href="#" class="action-btn notification">
+            <ion-icon name="notifications-outline"></ion-icon>
+        </a>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <button class="menu-btn" id="menuBtn">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+    </button>
+
+</nav>
+
+</header>
+
+
+<section class="hero"> 
+    <div class="hero-content"> 
+    <div class="badge"> <span></span> NEXT-GEN TECHNOLOGY </div> 
+    <h1> Upgrade Your <span>Digital Life.</span> </h1>
+    <p class="hero-text"> Discover smart gadgets, powerful technology and modern lifestyle products designed for the next generation. </p>
+    <div class="hero-buttons"> 
+        <a href="#shop" class="btn btn-primary"> Explore Products  
+            <ion-icon name="arrow-forward-outline"></ion-icon> </a> 
+            <a href="#categories" class="btn btn-outline"> View Categories </a> 
+        </div> 
+    </div> 
+    <!-- GADGET VISUAL --> 
+     <div class="gadget-area"> 
+        <div class="gadget-glow"></div> 
+        <!-- PHONE --> 
+         <div class="phone"> <div class="camera">
+         </div>
+          <div class="phone-screen">
+          </div> 
+        </div> 
+        <!-- GADGET CARD -->
+        <div class="gadget-card gadget-1"> 
+            <ion-icon name="headset-outline"></ion-icon>
+             <div> 
+                <strong> Smart Audio </strong> <small> Crystal Clear Sound </small>
+             </div> 
+            </div> 
+            <div class="gadget-card gadget-2"> 
+                <ion-icon name="watch-outline"></ion-icon>
+                <div> <strong> Smart Watch </strong> <small> Your Health. Your Style. </small> 
+            </div>
+             </div> 
+             <div class="gadget-card gadget-3"> 
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+                 <div> <strong> Next Gen Tech </strong> <small> Innovation Inside </small> 
+                </div> 
+            </div>
+         </div>
+         </section>
+            
+ <!-- ===================================================== CATEGORIES ===================================================== --> 
+  <section class="categories reveal" id="categories"> 
+    <div class="section-heading"> 
+        <span> EXPLORE </span> 
+        <h2> Shop By Category </h2> 
+        <p> Explore our collection of technology, gadgets and lifestyle essentials. </p> 
+    </div> 
+    
+    <div class="category-grid"> 
+    <div class="category"> 
+        <a href="mobiles.html">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+            <span>Mobiles</span>
+        </a>
+    </div> 
+    <div class="category"> 
+        <a href="laptops.html">
+            <ion-icon name="laptop-outline"></ion-icon> 
+            <span>Laptops</span>
+        </a> 
+    </div> 
+    <div class="category"> 
+        <a href="audio.html">
+            <ion-icon name="headset-outline"></ion-icon>
+            <span>Audio</span> 
+        </a>
+    </div> 
+    <div class="category"> 
+        <a href="smart-watches.html">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>Smart Watches</span> 
+        </a>
+    </div> 
+    <div class="category"> 
+        <a href="gaming.html">
+            <ion-icon name="game-controller-outline"></ion-icon>
+            <span>Gaming</span> 
+        </a>
+    </div> 
+    <div class="category"> 
+        <a href="smart-home.html">
+            <ion-icon name="home-outline"></ion-icon> 
+            <span>Smart Home</span> 
+        </a>
+    </div> 
+</div> 
+</section> 
+<!-- ===================================================== PRODUCTS ===================================================== --> 
+ <section class="products reveal" id="shop"> 
+    <div class="section-heading"> 
+        <span> TRENDING NOW </span> 
+        <h2> Featured Gadgets </h2> 
+        <p> Discover technology that's made to fit your lifestyle. </p> 
+    </div> 
+    <div class="product-grid">
+         <!-- PRODUCT 1 --> 
+          <div class="product-card"> 
+            <span class="discount"> 20% OFF </span> 
+            <div class="product-image"> 
+                <ion-icon name="phone-portrait-outline"></ion-icon> 
+            </div> <div class="product-info"> 
+                <small> SMARTPHONE </small> 
+                <h3> Nova X Pro </h3> 
+                <div class="rating"> ★★★★★ 
+
+                </div> 
+                <div class="price"> ₹39,999 
+                    <span class="old-price"> ₹49,999 </span> 
+                </div> <button class="product-btn"> 
+                    <ion-icon name="cart-plus"></ion-icon> Add to Cart </button> 
+                </div> 
+            </div> 
+            <!-- PRODUCT 2 --> 
+             <div class="product-card"> 
+                <span class="discount"> 15% OFF </span> 
+                <div class="product-image"> 
+                    <ion-icon name="headset-outline"></ion-icon> 
+                </div> 
+                <div class="product-info"> 
+                    <small> AUDIO </small> 
+                    <h3> AirBeat Pro </h3> 
+                    <div class="rating"> ★★★★★ 
+
+                    </div> <div class="price"> ₹4,999 
+                        <span class="old-price"> ₹5,999 </span> 
+                    </div> <button class="product-btn"> 
+                        <ion-icon name="cart-plus"></ion-icon> Add to Cart </button> 
+                    </div> 
+                </div> 
+                <!-- PRODUCT 3 --> 
+                 <div class="product-card"> 
+                    <span class="discount"> 25% OFF </span> 
+                    <div class="product-image"> 
+                        <ion-icon name="watch-outline"></ion-icon> 
+                    </div> 
+                    <div class="product-info"> <small> WEARABLE </small> <h3> Pulse Watch X </h3> 
+                        <div class="rating"> ★★★★★ 
+
+                        </div> 
+                        <div class="price"> ₹3,499 
+                            <span class="old-price"> ₹4,699 
+
+                            </span> 
+                        </div> 
+                        <button class="product-btn"> 
+                            <ion-icon name="cart-plus"></ion-icon> Add to Cart </button> 
+                        </div> 
+                    </div> 
+                    <!-- PRODUCT 4 --> 
+                     <div class="product-card"> 
+                        <span class="discount"> 30% OFF </span> 
+                        <div class="product-image"> 
+                            <ion-icon name="game-controller-outline"></ion-icon> 
+                        </div> 
+                        <div class="product-info"> <small> GAMING </small> 
+                            <h3> X Gaming Controller </h3> 
+                            <div class="rating"> ★★★★★ </div> 
+                            <div class="price"> ₹2,799 
+                                <span class="old-price"> ₹3,999 </span> 
+                            </div> <button class="product-btn"> 
+                                <ion-icon name="cart-plus"></ion-icon> Add to Cart </button> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </section> 
+<!-- ===================================================== FLASH SALE ===================================================== --> 
+ <section class="flash-sale reveal" id="deals"> 
+    <div class="flash-content"> 
+        <div> 
+            <span class="badge"> ⚡ LIMITED TIME </span> 
+            <h2> Flash Sale </h2> 
+            <p> Upgrade your tech before the timer ends. </p> 
+            <div class="countdown"> 
+                <div class="time"> 
+                    <strong id="hours">12</strong> 
+                    <small>HOURS</small> 
+                </div> 
+                <div class="time"> 
+                    <strong id="minutes">30</strong> 
+                    <small>MINUTES</small> 
+                </div> 
+                <div class="time"> 
+                    <strong id="seconds">45</strong> 
+                    <small>SECONDS</small> 
+                </div> 
+            </div> 
+        </div> 
+        <a href="#shop" class="btn btn-primary"> Shop Deals <ion-icon name="bolt"></ion-icon> 
+        </a> 
+    </div> 
+</section> 
+<!-- ===================================================== FEATURES ===================================================== --> 
+ <section class="features reveal"> 
+    <div class="section-heading"> 
+        <span> LUXVORA PROMISE </span> 
+        <h2> Shop With Confidence </h2> 
+    </div> <div class="feature-grid"> <div class="feature"> 
+        <ion-icon name="truck-fast-outline"></ion-icon> 
+        <h3> Fast Delivery </h3> 
+        <p> Get your favorite products delivered quickly and safely. </p> 
+    </div> 
+    <div class="feature"> 
+        <ion-icon name="shield-halved-outline"></ion-icon> 
+        <h3> Secure Shopping </h3> 
+        <p> Your information and transactions are protected. </p> 
+    </div> 
+    <div class="feature"> 
+        <ion-icon name="rotate-left-outline"></ion-icon> 
+        <h3> Easy Returns </h3> 
+        <p> Simple return process for eligible products. </p> 
+    </div> 
+    <div class="feature"> 
+        <ion-icon name="headset-outline"></ion-icon> 
+        <h3> 24/7 Support </h3> 
+        <p> Our support team is ready to help whenever you need us. </p> 
+    </div> 
+</div> 
+</section> 
+<!-- ===================================================== FOOTER ===================================================== --> 
+ <footer> 
+    <div class="footer-main"> 
+    <div> 
+        <div class="footer-logo"> LUXVORA 
+
+        </div> 
+        <p class="footer-about"> STYLE . TECH . EVERYTHING 
+            <br><br> 
+        Discover modern gadgets, technology and lifestyle products designed for the future. 
+        </p> 
+    </div> 
+    <div> 
+        <h4> Shop </h4> 
+        <ul> 
+            <li> <a href="mobiles.html">Mobiles</a> </li> 
+            <li> <a href="laptops.html">Laptops</a> </li> 
+            <li> <a href="audio.html">Audio</a> </li> 
+            <li> <a href="gaming.html">Gaming</a> </li> 
+        </ul> 
+    </div> 
+    <div> 
+        <h4> Support </h4>
+         <ul> 
+            <li> <a href="#">Contact Us</a> </li> 
+            <li> <a href="#">Shipping</a> </li> 
+            <li> <a href="#">Returns</a> </li> 
+            <li> <a href="#">FAQ</a> </li> 
+        </ul> 
+    </div> 
+    <div> 
+        <h4> Follow Us </h4> 
+        <ul> 
+            <li> <a href="#"> Instagram </a> </li> 
+            <li> <a href="#"> Facebook </a> </li> 
+            <li> <a href="#"> YouTube </a> </li> 
+            <li> <a href="#"> WhatsApp </a> </li> 
+        </ul> 
+    </div> 
+</div> 
+<div class="copyright"> © 2026 LUXVORA. STYLE . TECH . EVERYTHING. </div> 
+</footer>
+
+         
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

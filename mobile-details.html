@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Details</title>
+    <link rel="stylesheet" href="mobile-details.css">
+        <!-- LUXVORA FAVICON -->
+        <link rel="icon"
+          type="logo/png"
+          href="favicon.png">
+</head>
+<body>
+     <header>
+
+<nav class="navbar">
+
+    <!-- LOGO -->
+    <a href="INDEX.HTML" class="logo">
+        <span class="logo-main">LUXVORA</span>
+        <span class="logo-sub">STYLE . TECH . EVERYTHING</span>
+    </a>
+
+
+    <!-- NAVIGATION -->
+    <div class="nav-links" id="navLinks">
+
+        <a href="INDEX.HTML">Home</a>
+
+        <a href="categories.html">Categories</a>
+        
+        <a href="new-arrivals.html">New Arrivals</a>
+
+        <a href="deals-offers.html">Deals & Offers</a>
+
+
+        <!-- MORE -->
+        <div class="more" id="moreMenu">
+
+            <button class="more-btn" id="moreBtn">
+                More
+                <ion-icon name="chevron-down-circle"></ion-icon>
+            </button>
+
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+
+                <!-- PROFILE -->
+                <a href="profile.html" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="person-circle"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Your Profile
+                        </span>
+
+                        <span class="item-description">
+                            Manage your account
+                        </span>
+                    </span>
+
+                </a>
+
+                <!-- WISHLIST -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="heart"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Wishlist
+                        </span>
+
+                        <span class="item-description">
+                            Your saved products
+                        </span>
+                    </span>
+
+                </a>
+
+
+                <!-- CART -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="cart"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Carts
+                        </span>
+
+                        <span class="item-description">
+                            View your cart
+                        </span>
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICE -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="people-circle"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            24/7 Service Care
+                        </span>
+
+                        <span class="item-description">
+                            We're here to help
+                        </span>
+                    </span>
+
+                </a>
+
+
+                <!-- NOTIFICATION -->
+                <a href="#" class="dropdown-item">
+
+                    <span class="dropdown-icon">
+                        <ion-icon name="notifications"></ion-icon>
+                    </span>
+
+                    <span class="item-text">
+                        <span class="item-title">
+                            Notification
+                        </span>
+
+                        <span class="item-description">
+                            Latest updates & offers
+                        </span>
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT ACTIONS -->
+        <a href="#" class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+        </a>
+
+        <a href="#" class="action-btn">
+            <ion-icon name="cart-outline"></ion-icon>
+        </a>
+
+        <a href="#" class="action-btn notification">
+            <ion-icon name="notifications-outline"></ion-icon>
+        </a>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <button class="menu-btn" id="menuBtn">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+    </button>
+
+</nav>
+
+</header>
+
+<!-- =========================
+         MAIN
+    ========================== -->
+
+    <main class="product-page">
+
+    <!-- BACK BUTTON -->
+
+    <a href="mobiles.html" class="back-btn">
+
+        <ion-icon name="arrow-back-outline"></ion-icon>
+
+        <span>Back to Mobiles</span>
+
+    </a>
+
+
+        <!-- PRODUCT AREA -->
+
+        <section class="product-container">
+
+
+            <!-- =====================
+                 IMAGE SECTION
+            ====================== -->
+
+            <div class="product-gallery">
+
+                <div class="main-image-box">
+
+                    <span class="discount-badge" id="discountBadge">
+                        -20%
+                    </span>
+
+                    <button class="image-zoom" onclick="zoomImage()">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <img
+                        id="mainProductImage"
+                        src="https://m.media-amazon.com/images/I/31xdwGWyB6L._SX342_SY445_QL70_FMwebp_.jpg",
+                        
+                        alt="Mobile Product">
+
+                </div>
+
+
+                <!-- THUMBNAILS -->
+
+                <div
+                    class="thumbnail-container"
+                    id="thumbnailContainer">
+                </div>
+
+            </div>
+
+
+            <!-- =====================
+                 PRODUCT INFORMATION
+            ====================== -->
+
+            <div class="product-information">
+
+                <span class="product-brand" id="productBrand">
+                    BRAND
+                </span>
+
+                <h1 id="productName">
+                    Iphone 17 pro
+                </h1>
+
+
+                <!-- RATING -->
+
+                <div class="rating-row">
+
+                    <span class="rating" id="productRating">
+                        4.9 ★
+                    </span>
+
+                    <span class="review-text">
+                        1,245 Ratings & Reviews
+                    </span>
+
+                </div>
+
+
+                <!-- PRICE -->
+
+                <div class="price-section">
+
+                    <span class="sale-price" id="productPrice">
+                        ₹1,29,999
+                    </span>
+
+                    <span
+                        class="mrp"
+                        id="productMrp">
+                        ₹1,49,999
+                    </span>
+
+                    <span
+                        class="discount-text"
+                        id="discountText">
+                        12% OFF
+                    </span>
+
+                </div>
+
+
+                <!-- EMI -->
+
+                <p class="emi-info">
+
+                   <ion-icon name="card-outline"></ion-icon>
+
+                    No Cost EMI available on eligible cards
+
+                </p>
+
+
+                <hr>
+
+
+                <!-- =====================
+                     COLOR
+                ====================== -->
+
+                <div class="option-section">
+
+                    <h3>
+                        Color
+                    </h3>
+
+                    <div
+                        class="color-options"
+                        id="colorOptions">
+                    </div>
+
+                </div>
+
+
+                <!-- =====================
+                     STORAGE
+                ====================== -->
+
+                <div class="option-section">
+
+                    <h3>
+                        Storage
+                    </h3>
+
+                    <div
+                        class="storage-options"
+                        id="storageOptions">
+                    </div>
+
+                </div>
+
+
+                <!-- =====================
+                     DELIVERY
+                ====================== -->
+
+                <div class="delivery-box">
+
+                    <h3>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Delivery
+                    </h3>
+
+                    <div class="delivery-input">
+
+                        <input
+                            type="text"
+                            placeholder="Enter PIN code"
+                            maxlength="6"
+                            id="pinCode">
+
+                        <button onclick="checkDelivery()">
+                            Check
+                        </button>
+
+                    </div>
+
+                    <p id="deliveryMessage">
+                        Enter PIN code to check delivery.
+                    </p>
+
+                </div>
+
+
+                <!-- =====================
+                     STOCK
+                ====================== -->
+
+                <div class="stock-status">
+
+                   <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                    In Stock
+
+                </div>
+
+
+                <!-- =====================
+                     ACTIONS
+                ====================== -->
+
+                <div class="action-buttons">
+
+                    <button
+                        class="wishlist-btn"
+                        onclick="addWishlist()">
+
+                        <ion-icon name="heart"></ion-icon>
+                        Wishlist
+
+                    </button>
+
+
+                    <button
+                        class="cart-btn"
+                        onclick="addCart()">
+
+                        <ion-icon name="cart-outline"></ion-icon>
+
+                        Add to Cart
+
+                    </button>
+
+
+                    <button
+                        class="buy-btn"
+                        onclick="buyNow()">
+
+                        <ion-icon name="bolt-outline"></ion-icon>
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             KEY FEATURES
+        ========================== -->
+
+        <section class="features-section">
+
+            <h2>
+                Key Features
+            </h2>
+
+            <div
+                class="feature-grid"
+                id="featureGrid">
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SPECIFICATIONS
+        ========================== -->
+
+        <section class="specifications-section">
+
+            <h2>
+                Specifications
+            </h2>
+
+            <div
+                class="specifications"
+                id="specifications">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         IMAGE ZOOM MODAL
+    ========================== -->
+
+    <div
+        class="zoom-modal"
+        id="zoomModal">
+
+        <button
+            class="zoom-close"
+            onclick="closeZoom()">
+
+            &times;
+
+        </button>
+
+        <img
+            id="zoomedImage"
+            src=""
+            alt="Zoomed Product">
+
+    </div>
+
+    
+
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
